@@ -1,0 +1,83 @@
+/* Базовые стили */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .header, .footer {
+    background-color: #a52a2a; /* бурый цвет */
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    float: left;
+  }
+  
+  .navbar {
+    float: right;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  .alerts {
+    background-color: #ffff00; /* желтый цвет */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .company-description {
+    background-color: #ffffff; /* белый цвет */
+    padding: 20px 0;
+  }
+  
+  .company-description img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .advantages .col {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .search-routes form {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .search-routes input, .search-routes select {
+    margin: 0 5px;
+  }
+  
+  .interactive-map {
+    height: 300px; /* временная высота, пока карта не подключена */
+    background-color: #d3d3d3; /* временный фон */
+  }
+  
+  /* Очистка float */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
