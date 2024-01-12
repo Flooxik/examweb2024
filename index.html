@@ -24,12 +24,15 @@
                     <a href="#">Личный кабинет</a>
                     <a href="#about">О нас</a>
                     <a href="#routes">Выбор маршрута</a>
+                    <a href="#map">Карта Москвы</a>
                     <a href="#guides">Наши гиды</a>
                     <a href="#contacts">Контакты</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="header-placeholder h-32 bg-white-300"> </div>
      
     <section class="container mx-auto my-4" id="about">
         <div class="flex items-center">
@@ -97,6 +100,8 @@
 
     <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
 
+    <section class="container mx-auto my-4">  
+    <h2  id="guides" class="text-2xl font-bold text-red-600 text-center">Карта Москвы</h2> 
     <div id="map" style="width: 100%; height: 400px;"></div>
     <script>
         DG.then(function() {
@@ -106,6 +111,7 @@
             });
         });
     </script>
+    </section>
 
     <div class="red-line"></div>
 
