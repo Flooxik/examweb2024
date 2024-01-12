@@ -1,5 +1,5 @@
 <!DOCTYPE html>  
-<html lang="en">  
+<html lang="ru">  
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -14,7 +14,7 @@
 
     <header class="bg-red-600 nav-bar">
         <div class="container mx-auto p-4 flex items-center justify-between">
-            <img src="img/moscowcalling2.png" class="h-12">
+            <img src="img/moscowcalling2.png" class="h-12" alt="logonav">
             <div class="header-title">
                 <span>MOSCOW CALLING</span>
             </div>
@@ -25,7 +25,7 @@
                     <a href="#about">О нас</a>
                     <a href="#routes">Выбор маршрута</a>
                     <a href="#map">Карта Москвы</a>
-                    <a href="#guides">Наши гиды</a>
+                    <a href="#guides_id">Наши гиды</a>
                     <a href="#contacts">Контакты</a>
                 </div>
             </div>
@@ -33,10 +33,10 @@
     </header>
 
     <div class="header-placeholder h-32 bg-white-300"> </div>
-     
+
     <section class="container mx-auto my-4" id="about">
         <div class="flex items-center">
-            <img src="img/moscowcalling1.png" alt="Cyberpink Tours" class="w-1/3 rounded-lg">
+            <img src="img/moscowcalling1.png" alt="logomain" class="w-1/3 rounded-lg">
             <div class="ml-4">
                 <h2 class="text-2xl font-bold custom-text-red">Москва зовет!</h2>
                 <p class="custom-text-black">Туристическое агентство "MOSCOW CALLING" приглашает вас открыть для себя богатую историю, удивительную архитектуру и бурлящую культурную жизнь Москвы. Наше агентство предлагает эксклюзивные туры с опытными гидами, которые помогут вам исследовать самые знаковые места столицы, а также познакомят вас с менее известными, но не менее очаровательными уголками города.</p>
@@ -45,7 +45,6 @@
     </section>    
     
     <div class="red-line"></div>
-  
 
     <div class="inf">
         <div class="dignities custom-bg">
@@ -68,12 +67,11 @@
     
     <div class="red-line"></div>
 
-    <script src="routesapi.js"></script>
-   
-    <section class="container mx-auto my-4">      
+    <script src="routesapi.js"></script> 
+    <div class="container mx-auto my-4">      
         <section class="container mx-auto my-4 text-center">
-            <h2  id="routes" class="text-2xl font-bold custom-text-color mb-4">Наши маршруты</h2>     
-      
+            <h2  id="routes" class="text-2xl font-bold custom-text-color mb-4">Наши маршруты</h2>
+        </section>          
         <div class="mt-4">      
             <table class="table-auto">      
                 <thead>      
@@ -87,10 +85,8 @@
     
                 </tbody>      
             </table>      
-        </div>      
-      
-           
-    </section>      
+        </div>                    
+    </div>      
 
     <script src="js/routes.js"></script>
     
@@ -116,7 +112,7 @@
     <div class="red-line"></div>
 
     <section class="container mx-auto my-4"> 
-        <h2  id="guides" class="text-2xl font-bold text-red-600 text-center">Наши гиды</h2> 
+        <h2  id="guides_id" class="text-2xl font-bold text-red-600 text-center">Наши гиды</h2> 
         <div class="grid grid-cols-3 gap-4"> 
             <div class="guide-card bg-red-100 p-4 rounded-md">
                 <div class="guide-image-container">
@@ -147,9 +143,10 @@
             </div>
         </div> 
     </section>
- 
+
     <footer id="contacts" class="bg-red-600 text-white text-center"> 
         <p>&copy; MOSCOW CALLING | moscowcalling@mail.ru | +7 999 903-85-42</p> 
     </footer> 
+
 </body> 
 </html>
