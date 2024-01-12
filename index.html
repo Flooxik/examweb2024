@@ -35,8 +35,8 @@
         <div class="flex items-center">
             <img src="img/moscowcalling1.png" alt="Cyberpink Tours" class="w-1/3 rounded-lg">
             <div class="ml-4">
-                <h2 class="text-2xl font-bold custom-text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor libero natus sunt, alias provident cumque voluptatibus blanditiis modi ex nam corrupti asperiores repudiandae totam vitae, fugit accusantium. Ad, alias magnam.</h2>
-                <p class="custom-text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto saepe odio voluptatum? Soluta facere sapiente doloribus ad atque reprehenderit veritatis, mollitia quidem. Voluptatum voluptates aliquam a fuga, enim architecto. Quos.</p>
+                <h2 class="text-2xl font-bold custom-text-red">Москва зовет!</h2>
+                <p class="custom-text-black">Туристическое агентство "MOSCOW CALLING" приглашает вас открыть для себя богатую историю, удивительную архитектуру и бурлящую культурную жизнь Москвы. Наше агентство предлагает эксклюзивные туры с опытными гидами, которые помогут вам исследовать самые знаковые места столицы, а также познакомят вас с менее известными, но не менее очаровательными уголками города.</p>
             </div>
         </div>
     </section>    
@@ -46,36 +46,20 @@
 
     <div class="inf">
         <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
+            <h3 class="text-xl font-bold custom-text-color">Индивидуальный подход</h3>
+            <p>Наши туры разработаны с учетом ваших интересов и предпочтений</p>
         </div>
         <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
+            <h3 class="text-xl font-bold custom-text-color">Опытные гиды</h3>
+            <p>Наши гиды обладают глубокими знаниями о Москве и ее истории</p>
         </div>
         <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
+            <h3 class="text-xl font-bold custom-text-color">Уникальные маршруты</h3>
+            <p>Мы предлагаем экскурсии не только по классическим достопримечательностям, но и по скрытым жемчужинам города</p>
         </div>
         <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
-        </div>
-        <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
-        </div>
-        <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
-        </div>
-        <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
-        </div>
-        <div class="dignities custom-bg">
-            <h3 class="text-xl font-bold custom-text-color">placeholder</h3>
-            <p>placeholder</p>
+            <h3 class="text-xl font-bold custom-text-color">Комфорт и безопасность</h3>
+            <p>Обеспечиваем полное сопровождение и поддержку на протяжении всего путешествия</p>
         </div>
     </div>
     
@@ -110,7 +94,21 @@
     <div class="container mx-auto my-4 flex justify-center" id="paginationButtons"></div>
 
     <div class="red-line"></div>
-  
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    <script>
+        DG.then(function() {
+            DG.map('map', {
+                center: [55.75, 37.61],
+                zoom: 13
+            });
+        });
+    </script>
+
+    <div class="red-line"></div>
+
     <section class="container mx-auto my-4"> 
         <h2  id="guides" class="text-2xl font-bold text-red-600 text-center">Наши гиды</h2> 
         <div class="grid grid-cols-3 gap-4"> 
@@ -118,28 +116,28 @@
                 <div class="guide-image-container">
                     <img src="img/gid1.png" alt="Гид 1" class="guide-image">
                     <div class="guide-overlay">
-                        <p class="guide-description">placeholder</p>
+                        <p class="guide-description">Энтузиаст московской истории, специализируется на архитектурных шедеврах города. Иван увлечет вас рассказами о старинных особняках и знаменитых советских зданиях.</p>
                     </div>
                 </div>
-                <h3 class="guide-name text-white-600">placeholder</h3>
+                <h3 class="guide-name text-white-600">Виктор Корнеплод</h3>
             </div>
             <div class="guide-card bg-red-100 p-4 rounded-md">
                 <div class="guide-image-container">
-                    <img src="img/gid2.png" alt="Гид 1" class="guide-image">
+                    <img src="img/gid2.png" alt="Гид 2" class="guide-image">
                     <div class="guide-overlay">
-                        <p class="guide-description">placeholder</p>
+                        <p class="guide-description">Искусствовед с большим стажем. Анна предложит вам тур по галереям и музеям Москвы, раскрывая секреты великих художественных произведений.</p>
                     </div>
                 </div>
-                <h3 class="guide-name text-white-600">Гид 1</h3>
+                <h3 class="guide-name text-white-600">Анна Петровна</h3>
             </div>
             <div class="guide-card bg-red-100 p-4 rounded-md">
                 <div class="guide-image-container">
-                    <img src="img/gid3.png" alt="Гид 1" class="guide-image">
+                    <img src="img/gid3.png" alt="Гид 3" class="guide-image">
                     <div class="guide-overlay">
-                        <p class="guide-description">placeholder</p>
+                        <p class="guide-description">Любитель природы и активного отдыха. Степан проведет вас по живописным паркам и садам Москвы, рассказывая о их истории и современном значении для городской жизни.</p>
                     </div>
                 </div>
-                <h3 class="guide-name text-white-600">Гид 1</h3>
+                <h3 class="guide-name text-white-600">Степан Александрович</h3>
             </div>
         </div> 
     </section>

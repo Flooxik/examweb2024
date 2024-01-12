@@ -47,5 +47,3 @@ document.addEventListener("DOMContentLoaded", function() {
             displayRoutesDataPage(data, 1);
         });
 });
-
-
